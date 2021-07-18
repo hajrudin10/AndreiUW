@@ -804,6 +804,8 @@ Wire Wire Line
 Text Notes 4550 650  0    50   ~ 0
 NFC IC
 Wire Notes Line
+	6700 2000 6700 500 
+Wire Notes Line
 	500  2000 6700 2000
 $Comp
 L MCU_Custom:CY8C4014LQI-421 U?
@@ -975,6 +977,10 @@ Wire Wire Line
 	9700 1700 9450 1700
 Wire Wire Line
 	9700 1800 9450 1800
+Text GLabel 9700 1900 2    50   Input ~ 0
+LED
+Wire Wire Line
+	9700 1900 9450 1900
 Text GLabel 9700 1600 2    50   Input ~ 0
 TriacControl
 Wire Wire Line
@@ -1020,51 +1026,4 @@ F 3 "" H 7450 2500 50  0001 C CNN
 	1    7450 2500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 60FD178C
-P 10350 1900
-F 0 "R?" V 10143 1900 50  0000 C CNN
-F 1 "330" V 10234 1900 50  0000 C CNN
-F 2 "" V 10280 1900 50  0001 C CNN
-F 3 "~" H 10350 1900 50  0001 C CNN
-	1    10350 1900
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 60FD2236
-P 10550 2150
-F 0 "D?" H 10543 2367 50  0000 C CNN
-F 1 "LED" H 10543 2276 50  0000 C CNN
-F 2 "" H 10550 2150 50  0001 C CNN
-F 3 "~" H 10550 2150 50  0001 C CNN
-	1    10550 2150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60FD5DFA
-P 10550 2450
-F 0 "#PWR?" H 10550 2200 50  0001 C CNN
-F 1 "GND" H 10555 2277 50  0000 C CNN
-F 2 "" H 10550 2450 50  0001 C CNN
-F 3 "" H 10550 2450 50  0001 C CNN
-	1    10550 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10550 2450 10550 2300
-Wire Wire Line
-	10550 2000 10550 1900
-Wire Wire Line
-	10550 1900 10500 1900
-Wire Wire Line
-	9450 1900 10200 1900
-Text Notes 7550 650  0    50   ~ 0
-MCU 
-Wire Notes Line
-	6700 2850 11200 2850
-Wire Notes Line
-	6700 500  6700 2850
 $EndSCHEMATC
